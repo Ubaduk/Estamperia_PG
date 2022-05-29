@@ -1,0 +1,137 @@
+/*enlaces */
+
+a{color: black;}
+
+.enlaces{ 
+    background-color: rgb(255, 217, 0);
+    margin-left: 75px;
+    margin-right: 30px;
+    }
+
+.link{
+    display: inline-block;
+    font-family: 'Koulen', cursive;
+    color: #000;
+   
+    margin-left: 150px;
+    margin-right: 100px;
+
+}
+/* imagenes */
+.imgestamp {
+    margin-left: 400px;
+    margin-right: 400px;
+    max-width: 720px;
+    margin-top: 50px;
+ 
+
+}
+
+
+.imgtec{
+    max-width: 200px;
+    margin-left: 75px ;
+}
+
+/* titulos y headers */
+.title {
+    font-family: 'Koulen', cursive;
+    display: inline-block;
+    font-size: 100px;
+    margin-left: 250px;
+    margin-right:100px ;
+    color: rgb(255, 217, 0) ;
+    
+}
+
+.headers{
+    text-align: center ;
+    font-family:  'Koulen', cursive;
+    font-size: 100px;
+    color: rgb(255, 217, 0) ;
+
+
+
+}
+
+/*servicios y parrafos */
+.servicios{ 
+    text-align: left;
+    font-family:  'Koulen', cursive;
+    font-size: 50px ;
+    color: aliceblue;
+}
+
+
+.servicios__p{
+    text-align: left;
+    font-family:  'Koulen', cursive;
+font-size: 25px;
+color: aliceblue;
+list-style: none;
+
+}
+
+.tecniTittle{ 
+    text-align: left;
+    font-family:  'Koulen', cursive;
+    font-size: 50px ;
+    color: aliceblue;
+}
+
+
+.tecnicas__p{
+    text-align: left;
+    font-family:  'Koulen', cursive;
+font-size: 25px;
+color: aliceblue;
+list-style: none;
+max-width: 100x;
+
+}
+.parrafos{
+    text-align: center;
+    text-size-adjust: 25px ;
+    font-family: 'Koulen', cursive;
+    color: aliceblue;
+
+}
+
+/*footer*/
+
+.logos {
+
+    max-width: 50px;
+    margin-left: 15px;
+  
+}
+
+.redes {text-align: right;
+        border: 0px;
+        padding: 0px;
+
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    background-color:var(--primary-color);
+    margin-left: 10rem;
+    margin-right: 10rem;
+    padding: 2rem
+}
+
+#since {
+   
+    font-family: 'Koulen', cursive;
+    font-size: 50px;
+    margin: 0px;
+   
+     border: 0px;
+    padding: 0px;
+    text-align: left;
+}    
+#fb {max-width: 60px;
+}
+
