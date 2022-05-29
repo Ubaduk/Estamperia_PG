@@ -50,7 +50,7 @@ header{
     flex-direction: row;
     align-items: center;
     justify-content:space-around;
-    background-color:var(--primary-color);
+    background-image:linear-gradient(to bottom,orange,yellow);
     padding: 2rem;
     width: 100%;
 
@@ -132,10 +132,10 @@ header{
 .link{
     font-size: var(--text-mid);
     list-style: none;
-    
+    transition: all .2s ease-in-out; 
    
 }
-
+.link:hover { transform: scale(1.1); }
 a{
     color: var(--seconday-color);
     text-decoration: none;
@@ -303,8 +303,7 @@ picture{
     flex-direction: row;
     justify-content:space-around;
     align-items: center;
-    background-color:var(--primary-color);
-    padding: 2rem;
+    background-image:linear-gradient(to bottom,orange,yellow);
      width: 100%;
 }
 
