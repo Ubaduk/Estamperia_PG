@@ -8,36 +8,42 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&family=IBM+Plex+Serif:wght@700&display=swap" rel="stylesheet">
 <link rel="shortcut icon" href="./multimedia/logos/Estamperia PG 500x500.png" type="image/png" />
-<link rel="stylesheet" href="../css/styles.css" />  
+<link rel="stylesheet" href="../css/styles.css" /> 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 <body background="./multimedia/imagenes/imagenes estructura site/background.jpeg">
 
     <header>
 
      <!--Links -->
-     <ul class="linkBox">
-        
-        <li class="link"><a href="../index.html">Home</a> </li>
+     <nav>
+        <ul class=" container nav nav-pills nav-fill p-3 mb-2 bg-warning text-dark">
+            
+            <li class="nav-item "><a class="nav-link text-dark  fs-1"href="../index.html">Home</a> </li>
 
-        <li class="link"> <a href="./qsomos.html">Quienes Somos</a>   </li>
-        
-        <li class="link"> <a href="./galeria.html">Galeria</a>   </li>
+            <li class="nav-item "> <a class="nav-link text-dark  fs-1" href="./qsomos.html">Quienes Somos</a>   </li>
+            
+            <li class="nav-item "> <a class="nav-link text-dark  fs-1"href="./galeria.html">Galeria</a>   </li>
 
-        <li class="link"> <a href="./contacto.html">Contacto</a>   </li>
-    </ul>
-    
+            <li class="nav-item "> <a class="nav-link text-dark  fs-1"href="./contacto.html">Contacto</a>   </li>
+        </ul>
+    </nav>
     </header>
+    
 
-    <section class="servBox">
-        <!--Servicios-->
-
-
+<!--Servicios-->
         <h1 class="title">Servicios </h1>
 
-      <ul class=".tecnBox">
-          <li> <h2 class="tecniTittle">Estampado:</h2>
-                    <article class="tecnBox">
-                        <p class="tecnicas__p">
-                        Es una técnica utilizada para llevar un diseño a un objeto, ya sea plano o en relieve y esto se logra a través de la presión y el calor.
+        <div class=" container d-flex justify-content-center flex-column">
+       
+            <div class="card mb-3 bg-warning card border-light mb-3 card  " style="max-width: 1200px;">
+                <div class="row g-0">
+                <div class="col-md-4">
+                    <img class="img-fluid rounded-start" src="./multimedia/imagenes/imagenes tecnicas/vinilo/18_3_2021 9_07_16 p. m..jpeg"  alt="img tecnica vinilo">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                    <h5 class="card-title fw-bold fs-1">Estampado:</h5>
+                    <p class="card-text fs-3 text">            Es una técnica utilizada para llevar un diseño a un objeto, ya sea plano o en relieve y esto se logra a través de la presión y el calor.
                     
                         El estampado en tela es el más utilizado en la industria textil, publicitaria y de indumentarias.
                     
@@ -45,92 +51,101 @@
                     
                         El vinilo por corte se puede hacer para cualquier tipo de tela, en cualquier color. Este viene en colores planos y vinilo imprimible.
                     
-                        El vinilo común no se le puede modificar el color. Sin embargo, puedes combinar los colores como a ti más te guste. La medida estandar es de 49cm de ancho x metro.                 
+                        El vinilo común no se le puede modificar el color. Sin embargo, puedes combinar los colores como a ti más te guste. La medida estandar es de 49cm de ancho x metro.   </p>
                     
+                    </div>
+                </div>
+                </div>
+            </div>
 
-                         </p>  
-         </li>          
-                    
-                        <picture class="imgBox">    
-                         <img class="imgtec" src="./multimedia/imagenes/imagenes tecnicas/vinilo/18_3_2021 9_07_16 p. m..jpeg" alt="img tecnica vinilo">
+            
+            <div class="card mb-3 bg-warning card border-light mb-3" style="max-width: 1200px;">
+                <div class="row g-0">
+                <div class="col-md-4">
+                    <img class="img-fluid rounded-start" src="./multimedia/imagenes/imagenes tecnicas/sublimacion/IMG-20201230-WA0013.jpg"  alt="img tecnica sublimacion"  >
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                    <h5 class="card-title fw-bold fs-1">Sublimación:</h5>
+                    <p class="card-text fs-3">         Sublimar es el cambio de estado de un elemento de solido a gaseoso sin pasar por el estado líquido.
+    
+                        En el caso de la sublimación textil eso ocurre cuando tomamos un diseño, se imprime en un papel para sublimar, y lo llevamos conjuntamente con la tela a una prensa térmica, donde ocurre la magia.
+                        
+                        Allí, las tintas que estan en el papel pasan a la tela en forma de gas. Este queda en la superficie de la tela, donde gracias al calor hace que los poros de la tela se expandan y absorban ese gas.
+                        
+                        Luego, al enfriarse el poro se cierra y la tinta pasa de gas a sólido de vuelta.Quedando impregnado la tela.
                          
-                        </picture>       
-                       
-                     </article>   
+                        La sublimación tiene ciertos aspectos importantes y que definirán la calidad del trabajo. </p>
+                         
+                        
+                    </div>
+                    </div>
+                </div>
+                </div>
+            
+
+            <div class="card mb-3 bg-warning card border-light mb-3" style="max-width: 1200px;">
+                <div class="row g-0">
+                <div class="col-md-4">
+                    <img class="img-fluid rounded-start" src="./multimedia/imagenes/imagenes tecnicas/corte laser/corte-y-grabado-laser.jpeg"  alt="grabado laser"  >
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                    <h5 class="card-title fw-bold fs-1">Corte laser:</h5>
+                    <p class="card-text fs-3">    
+                        El corte por láser se refiere a un procedimiento de separación con el que se pueden cortar materiales metálicos y no metálicos de distintos espesores. Se basa en un rayo láser que se guía, se conforma y se concentra. Cuando este incide en la pieza, el material se calienta tanto que se funde o se evapora.     </p>
+                         
+                        
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+      
+
+
+
+        </div>
+
+
+</body>
+
+
+        
+
+
+      
+
                     
                     
                      
-                     <li>  
-                         <h2 class="tecniTittle">Sublimación:</h2> 
-                         <article class="tecnBox">
-                         <p class="tecnicas__p">
-                            Sublimar es el cambio de estado de un elemento de solido a gaseoso sin pasar por el estado líquido.
-    
-                            En el caso de la sublimación textil eso ocurre cuando tomamos un diseño, se imprime en un papel para sublimar, y lo llevamos conjuntamente con la tela a una prensa térmica, donde ocurre la magia.
-                            
-                            Allí, las tintas que estan en el papel pasan a la tela en forma de gas. Este queda en la superficie de la tela, donde gracias al calor hace que los poros de la tela se expandan y absorban ese gas.
-                            
-                            Luego, al enfriarse el poro se cierra y la tinta pasa de gas a sólido de vuelta.Quedando impregnado la tela.
-                             
-                            La sublimación tiene ciertos aspectos importantes y que definirán la calidad del trabajo.
-                             
-                            Por ejemplo: la prensa debe estar entre los 195 y 205 grados centigrados.
-                        
-                            <li class="tecnicas_p">☆La tela no debe pasar más de 40 segundos en la prensa térmica, a menos que quieras hacerla puré. </li>
-                               
-                            <li class="tecnicas__p">☆ No se puede sublimar en cualquier tela.Se recomienda usar tela de Polyester o con una proporción de 60% de este.</li>
-                            
-                            <li class="tecnicas__p">☆ Para finalizar es importante recordar que te recomendamos sublimar en tela de colores claros o prefleriblemente color Blanco. </li>
-                        </p>  
-                           <picture class="imgBox">
-                            <img class="imgtec" src="./multimedia/imagenes/imagenes tecnicas/sublimacion/IMG-20201230-WA0013.jpg" alt="img tecnica sublimacion"> 
-                        </picture>
-                        
-                        
-                 </li>  
-                </article>
-
+            
                 
-            <li>
-                 
-                <h2 class="tecniTittle">Cortar y grabado en láser:</h2>
-                <article class="tecnBox">
-                <p class="tecnicas__p">
-                        Esta ténica te permitirá: 
-
-                       <li class="tecnicas__p"> ☆ Grabar en vidrio con efecto esmerilado.</li>
-                       <li class="tecnicas__p"> ☆ Cortar y Grabar en cartón</li>
-                       <li class="tecnicas__p"> ☆ Cortar y grabar sobre Sharol o cualquier tipo de material noble.</li>
-                        <li class="tecnicas__p">☆ Te dará en algunos casos un acabado Vintage genial.</li>
-                </p>    
-                <p class="tecnicas__p">    
-                        El tiempo que utiliza para hacer su magia es de apróximadamente 8 minutos.
-
-                    </p>  
-                  
-                    
-                     </article>
-
-            </li>       
+           
             
             
            
         </ul>
         
     </section>    
+    <footer class=" d flex page-footer font-small mt-auto" >
+
+   
     
-    
-    <footer class="footer">
-  
         <!--Links redes-->
-      
+        <div class=" d-flex row p-3 mb-2 bg-warning text-dark">
     
-        <p  id="since">Since 2014</p>   
-        <div class="redes"> 
-            <a title="Instagram" href="https://www.instagram.com/estamperiapg/"><img class="logos" src="./multimedia/logos/logo ig.png" alt="Instagram" /></a>
+        <p id="since">Since 2014</p>   
         
-        </div>
+        <a class="text-end  " title="Instagram" href="https://www.instagram.com/estamperiapg/"><img class="logos" src="./multimedia/logos/logo ig.png" alt="Instagram" /></a>
+        
+      
+     
+    </div>
     </footer>
+    
     
 </body>
 </html>
