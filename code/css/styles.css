@@ -21,11 +21,14 @@
 --seconday-font: 'IBM Plex Serif', serif;
 
 /*Font Size*/
+--text--Xlarge:10em;
 --text-large: 5.2em;
 --text-mid: 3.4em ;
 --text-small: 2.4em;
 }
 
+
+/*General*/
 
 *{
     margin: 0;
@@ -37,8 +40,6 @@ html{
     font-size: 62.5%;
 }
 
-img{max-width: 50rem;
-}
 
 /* Header */
 
@@ -50,91 +51,21 @@ header{
     flex-direction: row;
     align-items: center;
     justify-content:space-around;
-    background-color:var(--primary-color);
+    background-image:linear-gradient(to bottom,orange,yellow);
     padding: 2rem;
     width: 100%;
 
-}
-
-@media (max-width:700px) {
-    header{
-        align-items: center;
-    }
-
-    .linkBox{
-    
-        flex-direction: column;
-        
-    }
-     
-    .imgestamp {
-        width: 500px;
-        max-width: 100%;
-        margin-top: 5rem;   
-    }
-    .indexBox{
-        max-width: 75%  ;
-        
-    }
-
-    .footer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-       
-    }
-     
-
-    
-    .redes__box{
-        margin-left: 0rem;
-    
-    }
-    .redes { margin-left: 0rem;
-        
-       
-    
-    }
-    .logos {
-     max-width: 5rem;
-      }
-    
-    
-   
-    
-
-    .imgtec{
-        max-width: 25px;
-       
-    }
-    
-    .imgBox{
-       
-        flex-direction: column;
-        justify-content: left;
-        align-items: center;
-        gap: 5rem ;
-        margin-top: 8rem;
-        margin-bottom: 8rem;
-        max-width: 75%;
-    }
-    .imgtec{
-        max-width: 30rem;
-       
-    }
-
-  
-    
 }
 
 
 .link{
     font-size: var(--text-mid);
     list-style: none;
-    
+    transition: all .2s ease-in-out; 
    
 }
+.link:hover { transform: scale(1.1); }
+
 
 a{
     color: var(--seconday-color);
@@ -144,17 +75,14 @@ a{
 
 }
 
-
+img {
+    width: 60%;
+    height: auto;
+    }
 
 
 /*body*/
 
-picture{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-}
 
 /*Index*/
 
@@ -164,24 +92,26 @@ picture{
     align-items: center;
     justify-content: center;
     max-width: 100%;
-    
+    margin-top:  10rem; 
+        
 }
 
 .title {
     font-family: var(--principal-font);
     
-    font-size: var(--text-large);
+    font-size: var(--text--Xlarge);
 
     color: rgb(255, 217, 0) ;
     text-align: center;
+    margin-top: 4rem;
     
 }
 
 .imgestamp {
-    width: 80rem;
+    width: 70rem;
     max-width: 100%;
     margin-top: 50px;  
-    height: 80rem; 
+    height: 60rem; 
 }
 
 /*Servicios*/
@@ -192,12 +122,18 @@ picture{
     color: var(--primary-color);
 }
 
+
 .servBox {
     display: flex;
     flex-direction: column;
-    justify-content: left;
-    margin-top: 10rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
     margin-bottom: 10rem;
+    width: 75%;
+    margin: 0 auto;
+    
+  
 
 }
 
@@ -205,7 +141,8 @@ picture{
    text-align: center;
     font-family: var(--principal-font);
     font-size: var(--text-mid) ;
-    color: var(--text-color);
+    color: var(--primary-color);
+    
 }
 
 .tecnBox{
@@ -214,10 +151,18 @@ picture{
     justify-content: center;
     margin-top: 2rem;
     margin-bottom: 4rem;
+    background: rgba(117, 113, 113, 0.3);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  
+    -webkit-backdrop-filter: blur( 15px );
+    border-radius: 10px;
+    border: 1px solid rgba(255, 241, 0, 0.18);
+    width: 100%;
+
 }
 
 .tecnicas__p{
-    text-align: center;
+    text-align: left;
     font-family: var(--seconday-font);
     font-size:var(--text-small);
     color: var(--text-color);
@@ -233,10 +178,10 @@ picture{
     gap: 5rem ;
     margin-top: 8rem;
     margin-bottom: 8rem;
-    max-width: 75%;
+
 }
 .imgtec{
-    max-width: 30rem;
+    max-width: 20rem;
     justify-content: center;
     align-content: center;
    
@@ -303,25 +248,30 @@ picture{
     flex-direction: row;
     justify-content:space-around;
     align-items: center;
-    background-color:var(--primary-color);
-    padding: 2rem;
+    background-image:linear-gradient(to bottom,orange,yellow);
      width: 100%;
+     margin-top: 10rem;
 }
 
 .redes__box{
     margin-left: 3rem;
-
+    
 }
 .redes { margin-left: 30rem;
-    
    
+        
+    
+   }
 
-}
+
 .logos {
  max-width: 5rem;
+ transition: all .2s ease-in-out; 
   }
 
-
+.logos:hover{ transform: scale(1.1);
+    
+  }
   #since {
    
     font-family:var(--seconday-font);
@@ -335,6 +285,144 @@ picture{
 }
 
 
+/*MediaQueries*/
+@media (max-width:992px){
+    .link{
+        font-size: var(--text-mid);
+    }
+    
 
 
 
+    .imgtec{
+       width: 18rem;
+        justify-content: center;
+        align-content: center;
+        gap: 4rem ;
+
+    }
+
+
+
+
+
+
+
+}
+@media (max-width:768px)
+ {
+     /*index*/
+    header{
+        align-items: center;
+    }
+
+    .linkBox{
+    
+        flex-direction: column;
+        
+    }
+    
+    .indexBox{
+        max-width: 100%  ;
+        
+    }  
+    .imgestamp {
+        width: 50rem;
+        max-width: 100%;
+        margin-top: 5rem;  
+        height: 40rem; 
+    }
+ 
+    /*servicios*/
+
+    .title{font-size: var(--text--Xlarge) }
+
+
+
+    .imgBox{flex-direction: row;
+    }
+    .imgtec{
+        width:16rem;
+        justify-content: center;
+        align-content: center;
+        gap: 3rem ;
+
+    }
+
+
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+       
+    }
+     
+
+    
+    .redes__box{
+        margin-left: 0rem;
+    
+    }
+    .redes { margin-left: 0rem;
+        
+       
+    
+    }
+    .logos {
+     max-width: 5rem;
+      }
+    
+    
+    .nav__links{
+        display: flex;
+        flex-direction: row;
+    
+    }
+    
+
+
+}
+
+@media (max-width:576px){
+
+
+.imgtec{
+
+    width: 10rem;
+}
+
+
+
+.title{
+    font-size: var(--text-large);
+}
+
+
+
+
+
+
+}
+
+@media (max-width:480px) {
+
+    /*index*/
+
+.link{
+    font-size: var(--text-small);
+}
+
+
+
+
+
+
+    /*servicios*/
+
+    .imgtec{
+
+        width: 8rem;
+    }
+}
