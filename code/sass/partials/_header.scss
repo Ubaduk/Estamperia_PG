@@ -1,0 +1,27 @@
+header{
+    width: 100%;
+    .linkBox{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content:space-around;
+        background-image:linear-gradient(to bottom,orange,yellow);
+        padding: 2rem;
+        width: 100%;
+       
+        .link{
+            font-size: $text-mid;
+            list-style: none;
+            transition: all .2s ease-in-out; 
+            
+       
+        } 
+        
+        
+      
+    
+    }
+    
+}    .link:hover { transform: scale(1.1); }
+
+

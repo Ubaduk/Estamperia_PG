@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+a{
+    color: $seconday-color;
+    text-decoration: none;
+    font-family: $seconday-font;
+   width: 50%;
+
+}
+
+img {
+    width: 60%;
+    height: auto;
+    }

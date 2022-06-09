@@ -1,0 +1,40 @@
+.indexBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    margin-top:  10rem; 
+
+    .imgestamp {
+        width: 70rem;
+        max-width: 100%;
+        margin-top: 50px;  
+        height: 60rem; 
+    }
+    
+    .title {
+        font-family: $principal-font;
+        
+        font-size: $text--Xlarge;
+    
+        color: rgb(255, 217, 0) ;
+        text-align: center;
+        margin-top: 4rem;
+        
+    }
+    
+    
+}
+
+.title {
+    font-family: $principal-font;
+    
+    font-size: $text--Xlarge;
+
+    color: rgb(255, 217, 0) ;
+    text-align: center;
+    margin-top: 4rem;
+    
+}
+

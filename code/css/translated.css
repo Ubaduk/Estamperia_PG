@@ -1,0 +1,161 @@
+/* externos */
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&family=IBM+Plex+Serif:wght@700&display=swap");
+/* misc */
+/*colors*/
+/*spacing*/
+/*font family*/
+/*Font Size*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+a {
+  color: black;
+  text-decoration: none;
+  font-family: "IBM Plex Serif", serif;
+  width: 50%; }
+
+img {
+  width: 60%;
+  height: auto; }
+
+/* partials */
+header {
+  width: 100%; }
+  header .linkBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-image: linear-gradient(to bottom, orange, yellow);
+    padding: 2rem;
+    width: 100%; }
+    header .linkBox .link {
+      font-size: 3.4em;
+      list-style: none;
+      transition: all .2s ease-in-out; }
+
+.link:hover {
+  transform: scale(1.1); }
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-image: linear-gradient(to bottom, orange, yellow);
+  width: 100%;
+  margin-top: 10rem; }
+  .footer .redes__box {
+    margin-left: 3rem; }
+    .footer .redes__box .redes {
+      margin-left: 30rem; }
+
+.logos {
+  max-width: 5rem;
+  transition: all .2s ease-in-out; }
+  .logos:hover {
+    transform: scale(1.1); }
+
+#since {
+  font-family: "IBM Plex Serif", serif;
+  font-size: 5rem;
+  justify-content: left; }
+
+#fb {
+  margin-left: 15rem;
+  max-width: 6rem; }
+
+/* site */
+.indexBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  margin-top: 10rem; }
+  .indexBox .imgestamp {
+    width: 70rem;
+    max-width: 100%;
+    margin-top: 50px;
+    height: 60rem; }
+  .indexBox .title {
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 10em;
+    color: #ffd900;
+    text-align: center;
+    margin-top: 4rem; }
+
+.title {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 10em;
+  color: #ffd900;
+  text-align: center;
+  margin-top: 4rem; }
+
+/* m query */
+/*MediaQueries*/
+@media (max-width: 992px) {
+  .link {
+    font-size: 3.4em; }
+  .imgtec {
+    width: 18rem;
+    justify-content: center;
+    align-content: center;
+    gap: 4rem; } }
+
+@media (max-width: 768px) {
+  /*index*/
+  header {
+    align-items: center; }
+  .linkBox {
+    flex-direction: column; }
+  .indexBox {
+    max-width: 100%; }
+  .imgestamp {
+    width: 50rem;
+    max-width: 100%;
+    margin-top: 5rem;
+    height: 40rem; }
+  /*servicios*/
+  .title {
+    font-size: 10em; }
+  .imgBox {
+    flex-direction: row; }
+  .imgtec {
+    width: 16rem;
+    justify-content: center;
+    align-content: center;
+    gap: 3rem; }
+  .footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around; }
+  .redes__box {
+    margin-left: 0rem; }
+  .redes {
+    margin-left: 0rem; }
+  .logos {
+    max-width: 5rem; }
+  .nav__links {
+    display: flex;
+    flex-direction: row; } }
+
+@media (max-width: 576px) {
+  .imgtec {
+    width: 10rem; }
+  .title {
+    font-size: 5.2em; } }
+
+@media (max-width: 480px) {
+  /*index*/
+  .link {
+    font-size: 2.4em; }
+  /*servicios*/
+  .imgtec {
+    width: 8rem; } }

@@ -1,0 +1,25 @@
+/* externos */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&family=IBM+Plex+Serif:wght@700&display=swap');
+
+/* misc */
+
+@import './misc/variables';
+@import './misc/normalize';
+@import './misc/animations';
+
+/* partials */
+
+@import './partials/header';
+@import './partials/footer';
+
+/* site */
+
+@import './site/home';
+@import './site/qsomos';
+@import './site/servicios';
+@import './site/galeria';
+@import './site/contacto';
+
+/* m query */
+
+@import './Mquery/mquery';

@@ -1,0 +1,49 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    background-image:linear-gradient(to bottom,orange,yellow);
+     width: 100%;
+     margin-top: 10rem;
+
+    .redes__box{
+        margin-left: 3rem;
+
+
+    .redes { margin-left: 30rem;
+   
+        
+    
+}
+
+         }
+    
+
+     }
+
+
+
+
+.logos {
+ max-width: 5rem;
+ transition: all .2s ease-in-out; 
+
+
+ &:hover{ transform: scale(1.1);
+  }
+
+
+    
+  }
+  #since {
+   
+    font-family:$seconday-font;
+    font-size: 5rem;
+    justify-content: left;
+}    
+#fb {
+
+    margin-left: 15rem;
+    max-width: 6rem;
+}
