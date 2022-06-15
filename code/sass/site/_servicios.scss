@@ -1,0 +1,73 @@
+
+
+.servBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 10rem;
+    width: 75%;
+    margin: 0 auto;
+   
+    .tecnBox{
+      
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+        background: rgba(117, 113, 113, 0.3);
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+       -webkit-backdrop-filter: blur( 15px );
+        border-radius: 10px;
+        border: 1px solid rgba(255, 241, 0, 0.18);
+        width: 100%;
+        .tecni__tittle{ 
+            text-align: center;
+             font-family: $principal-font;
+             font-size: map-get($map: $fontSizes , $key: 'sub_tittle' ) ;
+             color: $primary-color;}
+
+        .tecni__p{
+                text-align: left;
+                font-family: $seconday-font;
+                font-size:map-get($map: $fontSizes , $key:'paragraph' );
+                color: $text-color;
+                list-style: none;
+               
+            }
+    
+    
+    
+    
+  
+
+}
+
+
+    
+}
+
+
+
+
+.imgBox{
+    @include flex(row, center, center, 5rem,)
+
+   
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+
+.imgtec{
+    max-width: 20rem;
+    justify-content: center;
+    align-content: center;
+   
+}
+
+}
+
+.imgBox_laser{
+    gap:7rem;
+    @extend .imgBox ;
+
+
+}

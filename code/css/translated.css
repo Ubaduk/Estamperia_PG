@@ -5,6 +5,7 @@
 /*spacing*/
 /*font family*/
 /*Font Size*/
+/*map*/
 * {
   margin: 0;
   padding: 0;
@@ -74,9 +75,9 @@ header {
 .indexBox {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  max-width: 100%;
+  align-items: center;
+  gap: 0;
   margin-top: 10rem; }
   .indexBox .imgestamp {
     width: 70rem;
@@ -96,6 +97,52 @@ header {
   color: #ffd900;
   text-align: center;
   margin-top: 4rem; }
+
+.servBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 10rem;
+  width: 75%;
+  margin: 0 auto; }
+  .servBox .tecnBox {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    background: rgba(117, 113, 113, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 241, 0, 0.18);
+    width: 100%; }
+    .servBox .tecnBox .tecni__tittle {
+      text-align: center;
+      font-family: "IBM Plex Sans", sans-serif;
+      font-size: 3.4em;
+      color: #ffd900; }
+    .servBox .tecnBox .tecni__p {
+      text-align: left;
+      font-family: "IBM Plex Serif", serif;
+      font-size: 2.4em;
+      color: white;
+      list-style: none; }
+
+.imgBox, .imgBox_laser {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  margin-top: 8rem;
+  margin-bottom: 8rem; }
+  .imgBox .imgtec, .imgBox_laser .imgtec {
+    max-width: 20rem;
+    justify-content: center;
+    align-content: center; }
+
+.imgBox_laser {
+  gap: 7rem; }
 
 /* m query */
 /*MediaQueries*/
@@ -124,7 +171,7 @@ header {
   /*servicios*/
   .title {
     font-size: 10em; }
-  .imgBox {
+  .imgBox, .imgBox_laser {
     flex-direction: row; }
   .imgtec {
     width: 16rem;
