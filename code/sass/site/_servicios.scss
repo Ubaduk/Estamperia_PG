@@ -1,6 +1,6 @@
 
 
-.servBox {
+.serv_box {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -9,8 +9,16 @@
     margin-bottom: 10rem;
     width: 75%;
     margin: 0 auto;
-   
-    .tecnBox{
+   .serv_title{  font-family: $principal-font;
+        
+    font-size: $text--Xlarge;
+
+    color: rgb(255, 217, 0) ;
+    text-align: center;
+    margin-top: 4rem;
+    }
+  
+    .tecn_box{
       
         margin-top: 2rem;
         margin-bottom: 4rem;
@@ -20,7 +28,7 @@
         border-radius: 10px;
         border: 1px solid rgba(255, 241, 0, 0.18);
         width: 100%;
-        .tecni__tittle{ 
+        .tecni__subtitle{ 
             text-align: center;
              font-family: $principal-font;
              font-size: map-get($map: $fontSizes , $key: 'sub_tittle' ) ;
@@ -50,7 +58,7 @@
 
 
 .imgBox{
-    @include flex(row, center, center, 5rem,)
+    @include flex(row, center, center, 5rem,);
 
    
     margin-top: 8rem;
@@ -69,5 +77,73 @@
     gap:7rem;
     @extend .imgBox ;
 
+
+}
+
+
+/*MediaQueries*/
+@media (max-width:992px){
+  
+    .imgBox{
+      
+    
+    .imgtec{
+        width: 18rem;
+         gap: 4rem ;
+    }
+    
+    }
+ 
+
+
+
+
+}
+@media (max-width:768px)
+ {
+    
+    /*servicios*/
+
+    .serv_box {
+        .serv_title{font-size: $text-large; }
+
+    }
+
+    
+
+
+    .imgBox{
+    
+    .imgtec{
+        width:16rem;
+        gap: 3rem ;
+
+                 }
+            }
+    
+}
+
+@media (max-width:576px){
+
+    .imgBox{
+    
+        .imgtec{
+            width: 10rem;  
+         }
+            
+            }
+        
+    }
+
+@media (max-width:480px) {
+    .imgBox{
+    
+        .imgtec{
+            width: 8rem;  
+         }
+            
+            }
+        
+    
 
 }

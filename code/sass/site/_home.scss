@@ -1,17 +1,19 @@
-.indexBox{
+.index_box{
 
-    @include flex(column, center , center, 0,)
+    @include flex(column, center , center, 0,);
              
     margin-top:  10rem; 
 
-    .imgestamp {
+}
+
+    .index_imgEstamp {
         width: 70rem;
         max-width: 100%;
         margin-top: 50px;  
         height: 60rem; 
     }
     
-    .title {
+    .index_title{
         font-family: $principal-font;
         
         font-size: $text--Xlarge;
@@ -23,16 +25,46 @@
     }
     
     
+
+
+
+
+/*MediaQueries*/
+
+
+@media (max-width:768px)
+ {
+     /*index*/
+  
+    
+    .index_box{
+        max-width: 100%  ;
+        
+    }  
+    .index_imgEstamp {
+        width: 50rem;
+        max-width: 100%;
+        margin-top: 2rem;  
+        height: 40rem; 
+    }
+ 
+   
+
 }
 
-.title {
-    font-family: $principal-font;
-    
-    font-size: $text--Xlarge;
+@media (max-width:576px){
 
-    color: rgb(255, 217, 0) ;
-    text-align: center;
-    margin-top: 4rem;
-    
+
+
+
+.index_title{
+    font-size: $text-large;
+}
+
+
+
+
+
+
 }
 

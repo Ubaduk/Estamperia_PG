@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./multimedia/logos/Estamperia PG 500x500.png" type="image/png" />
-    <link rel="stylesheet" href="../css/styles.css" />  
+    <link rel="stylesheet" href="../css/translated.css" />  
        
      <title>EstamperiaPG | Contacto</title>
     
@@ -18,26 +18,30 @@
 <body background="./multimedia/imagenes/imagenes estructura site/background.jpeg">
     <header>
      <!--Links -->
+     <nav>
         <ul class="linkBox">
-        <li class="link"><a href="../index.html">Home</a> </li>
+            <li class="link"><a href="../index.html">Home</a> </li>
 
-        <li class="link"> <a href="./qsomos.html">Quienes Somos</a>   </li>
-        
-        <li class="link"> <a href="./servicios.html">Servicios</a>   </li>
+            <li class="link"> <a href="./qsomos.html">Quienes Somos</a>   </li>
+            
+            <li class="link"> <a href="./servicios.html">Servicios</a>   </li>
 
-        <li class="link"> <a href="./galeria.html">Galeria</a>   </li>
-
-         </ul>
-
+            <li class="link"> <a href="./galeria.html">Galeria</a>   </li>
+            
+            <li class="link"> <a  href="./contacto.html">Contacto</a>   </li>
+            </ul>
+     </nav>
     </header>
     <!--Title-->
-    <h1 class="title">Contacto</h1>
+    <h1 class="contact_title">Contacto</h1>
 
     <!--Formulario-->
-        <form>
+        <form class="contact_box">
            <div>
-               <h3 class="servicios__p">Tipo de cliente</h3>
-                <select name="Tipo de cliente">
+               <h3 class="contact_subtitle">Tipo de cliente</h3>
+            
+            
+           <select class="option_box" name="Tipo de cliente">
                 <option value="estudiante">Estudiante</option>
                 <option value="empresa">Empresa</option>
                 <option value="particular">Particular</option>
@@ -49,26 +53,30 @@
         <input type="text" name="apellido" placeholder="apellido" required >
         <input type="text" name="mail" placeholder="mail" required>
         <input type="text" name="Numero" placeholder="telefono" required>
-            <h3 class="servicios__p">Dejanos tu consulta</h3>
+            <h3 class="contact_subtitle">Dejanos tu consulta</h3>
         
-        <textarea name="comentario" rows="5" cols="50">Consulta: </textarea>
+        <textarea  class="coment_box" name="comentario" rows="5" cols="50">Consulta: </textarea>
 
         <input type="reset" name="resetear">
         <input type="submit" name="Enviar">
     </form>
-  
-<footer>
-  
-    <!--Links redes-->
-    <div class="footer">
-
-    <p  id="since">Since 2014</p>   
-    <a class="redes" title="Instagram" href="https://www.instagram.com/estamperiapg/"><img class="logos" src="./multimedia/logos/logo ig.png" alt="Instagram" /></a>
-    
-    <a  class="redes"  title="facebook" href="https://www.facebook.com/estampesublimeRIA"><img id="fb" class="logos" src="./multimedia/logos/logo fb.png" alt="facebook" /></a>
-    </div>
-</footer>
-
+        </div> 
+    <footer>
+ 
+        <!--Links redes-->
+         <div class="footer_box">
+     
+             <p class="footer_since">Since 2014</p>   
+                 <div class="footer_social">
+                 
+                     <a  class="footer_redes" title="facebook" href="https://www.facebook.com/estampesublimeRIA"><img  class="footer_logos" src="./multimedia/logos/logo fb.png" alt="facebook" /></a>
+                 
+                     <a class="footer_redes" title="Instagram" href="https://www.instagram.com/estamperiapg/"><img class="footer_logos" src="./multimedia/logos/logo ig.png" alt="Instagram" /></a>
+         
+                  </div>
+         
+         </div>
+     </footer>
 
 </body>
 </html>

@@ -1,6 +1,7 @@
 header{
-    width: 100%;
-    .linkBox{
+    width: 100%;}
+
+.linkBox{
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -22,6 +23,48 @@ header{
     
     }
     
-}     .link:hover { transform: scale(1.1); }
+    .link:hover { transform: scale(1.1); }
 
 
+/*MediaQueries*/
+@media (max-width:992px){
+ 
+
+    .linkBox{
+       
+        .link{
+            font-size: $text-mid;
+        }
+             } 
+        
+         }
+    
+
+@media (max-width:768px)
+ {
+     /*index*/
+   
+    .linkBox{
+        height: 18rem;
+        flex-direction: column;
+        
+    }
+    
+   
+
+}
+
+
+
+
+@media (max-width:480px) {
+
+    .linkBox{
+      
+        .link{
+            font-size: $text-small;
+        } 
+        
+    }
+
+}
