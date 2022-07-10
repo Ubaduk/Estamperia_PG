@@ -16,7 +16,20 @@ a{
 
 }
 
+li{
+    list-style: none;
+}
+
 img{
 width: 100%;
 height: auto;
+
 }
+
+body{
+    background: linear-gradient(-45deg, #000000, #161616, #1f1e1eb6,#010101d6 ,#252525);
+    background-size: 400% ,400%;
+    animation: gradient 10s ease infinite;
+    height: 100%    ;
+}
+

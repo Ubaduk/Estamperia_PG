@@ -7,28 +7,52 @@
     color: rgb(255, 217, 0) ;
     text-align: center;
     margin-top: 4rem;
+    filter: drop-shadow(1px 1px 10px rgb(0, 0, 0));
 }
 
-.qsomos_box{
+.qsomos_box_container{
+    @include flex(column,center,center,1rem)
+    margin-top: 1rem;
+    margin-bottom: 10rem;
+    width: 75%;
+    margin: 0 auto;
+  
+    .qsomos_box{
 
-    margin-top: 2rem;
+        margin-top: 2rem;
         margin-bottom: 4rem;
-        margin-left: 16rem;
-        margin-right: auto;
         background: rgba(117, 113, 113, 0.3);
-        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        box-shadow: 0 1px 1rem 0 rgba(255, 255, 5, 0.973);
        -webkit-backdrop-filter: blur( 15px );
         border-radius: 10px;
         border: 1px solid rgba(255, 241, 0, 0.18);
-        width: 75%;
-        height: 90rem;
-
+        width: 100%;
+    }
+  
+  
 .qsomos_p{
     text-align: center;
     font-family: $seconday-font;
     font-size:map-get($map: $fontSizes , $key:'paragraph' );
     color: $text-color;
     list-style: none;
+    line-height: 2em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+   
+}
+.qsomos_imgBox{
+    margin-top: 10em;
+    @include flex(row, center, center, 5rem,);
+
+   
+    
+}
+.qsomos_img{
+    width: 80em;
+    border-radius: 15px;
+    filter: drop-shadow(1px 1px 10px rgb(0, 0, 0));
+    margin-bottom: 2rem;
 }
 }
 
@@ -38,49 +62,56 @@
 @media (max-width:768px) {
 
     .qsomos_title{
-
-            
-       
+  
+        font-size: $text-large;
     }
-    
-    .qsomos_box{
     
      
-            margin-left: 5rem;
-            margin-right: auto;
-           
-    }
     
+
+.qsomos_box{
+
    
+.qsomos_p{
+
+    font-size: 2rem;
     
+}
+.qsomos_imgBox{
+  
+    
+}
+.qsomos_img{
+    width: 35rem;
+   
+    filter: drop-shadow(1px 1px 5px rgb(0, 0, 0));
+
+}
+}
 
 }
 
 @media (max-width:480px) {
 
-    .qsomos_title{
-
-            
-        font-size: 4.2em;
-    
-    }
-    
     .qsomos_box{
-    
-     
-            margin-left: 5rem;
-            margin-right: auto;
-           
-    
-    .qsomos_p{
-        text-align: center;
-        font-family: $seconday-font;
-        font-size:map-get($map: $fontSizes , $key:'paragraph' );
-        color: $text-color;
-        list-style: none;
-    }
-    }
+
    
-    
+        .qsomos_p{
+        
+            
+            
+        }
+        .qsomos_imgBox{
+          
+            
+        }
+        .qsomos_img{
+            width: 20rem;
+           
+            
+        
+        }
+        }
+        
 
 }
